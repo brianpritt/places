@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places I've Been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places I've Been</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Location</label>
+          <input id="name" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="year">When year did you go?</label>
+          <input id="year" type="number" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="activity">What were you favorite activities?</label>
+          <input id="activity" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Any other notes?</label>
+          <input id="notes" type="text" class="form-control">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div id="places">
+            <ul>
+            </ul>
+          </div><!--places-->
+        </div><!--column1-->
+        <div class="col-md-6">
+          <div id="called">
+            <p>Location: <span class="location"></span></p>
+            <p>Year: <span class="year"></span></p>
+            <p>Activities: <span class="activities"></span></p>
+            <p>Notes: <span class="notes"></span></p>
+          </div><!--called-->
+        </div><!--column 2-->
+      </div><!--row-->
+    </div> <!--container-->
+  </body>
+</html>
