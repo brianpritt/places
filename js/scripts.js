@@ -4,6 +4,11 @@ function Place(name, year, activity, notes){
   this.activity = activity;
   this.notes = notes;
 }
+
+Place.prototype.nameYear = function() {
+  return this.name + ", " + this.year;
+}
+
 $(document).ready(function(){
 
   $("form").submit(function(event){
@@ -20,7 +25,7 @@ $(document).ready(function(){
   $("#activity").val("");
   $("#notes").val("");
 
-  $("#places").append("<li><span class='placeName'>" + newPlace.name + "</span></li>");
+  $("#places").append("<li><span class='placeName'>" + newPlace.nameYear() + "</span></li>");
 
   $(".placeName").last().click(function(){
     $("#called").show();
